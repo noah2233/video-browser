@@ -1,12 +1,11 @@
 <template>
   <ul>
-    <VideoListItem v-for="video in videos" :video="video">
-    </VideoListItem>
+    <VideoListItem v-for="video in videos" :key="video.etag" :video="video"></VideoListItem>
   </ul>
 </template>
 
 <script>
-import VideoListItem from './VideoListItem';
+import VideoListItem from "./VideoListItem";
 
 export default {
   name: "VideoList",

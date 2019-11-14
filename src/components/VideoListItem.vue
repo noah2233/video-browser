@@ -1,15 +1,15 @@
 
 <template>
-  <li>
-    {{video.snippet.title}}
-  </li>
+  <div>
+    <li>{{video.snippet.title}}</li>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'VideoListItem',
+  name: "VideoListItem",
   props: {
     video: Object
   }
-}
+};
 </script>
