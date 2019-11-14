@@ -9,7 +9,6 @@
 <script>
 import axios from "axios";
 import SearchBar from "./components/SearchBar";
-
 import VideoList from "./components/VideoList";
 
 const API_KEY = "AIzaSyBeaVjeakVaXF-yzRDMc7tL_-d_rv_f-wA";
