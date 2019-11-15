@@ -2,8 +2,8 @@
 <template>
   <div>
     <li class="list-group-item">
-      <img :src="thumbnailUrl" />
-      {{video.snippet.title}}
+      <img class="mr-3" :src="thumbnailUrl" />
+      <div class="media-body">{{video.snippet.title}}</div>
     </li>
   </div>
 </template>
@@ -21,3 +21,12 @@ export default {
   }
 };
 </script>
+<style scoped>
+li {
+  display: flex;
+  cursor: pointer;
+}
+li:hover {
+  background-color: #eee;
+}
+</style>
