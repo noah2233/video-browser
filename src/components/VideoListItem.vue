@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <li>{{video.snippet.title}}</li>
+    <li class="list-group-item">{{video.snippet.title}}</li>
   </div>
 </template>
 
