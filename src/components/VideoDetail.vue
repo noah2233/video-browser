@@ -1,5 +1,5 @@
 <template>
-  <div>{{ video?video.snippet.title:null }}</div>
+  <div v-if="video">video.snippet.title</div>
 </template>
 
 <script>
