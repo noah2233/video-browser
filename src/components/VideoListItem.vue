@@ -2,7 +2,7 @@
 <template>
   <div>
     <li class="list-group-item">
-      <img :src="video.snippet.thumbnails.default.url" />
+      <img :src="thumbnailUrl" />
       {{video.snippet.title}}
     </li>
   </div>
@@ -13,6 +13,11 @@ export default {
   name: "VideoListItem",
   props: {
     video: Object
+  },
+  computed: {
+    thumbnailUrl() {
+      return this.video.snippet.thumbnails.default.url;
+    }
   }
 };
 </script>
